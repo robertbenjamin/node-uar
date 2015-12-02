@@ -38,7 +38,7 @@ function broadcast(message, client) {
       }
     }
 
-    // For each client in the client list, 
+    // Remove all destroyed clients from the client list
     cleanup.forEach(function(node) {
       clientList.splice(clientList.indeOf(node), 1)
     })
